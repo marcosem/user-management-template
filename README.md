@@ -1,8 +1,8 @@
 ## About the Project
 
 ### Built with
-* ![NodeJS v22.18.0][node-url]
-* ![Typescript][ts-url]
+* [NodeJS v22.18.0][node-url]
+* [Typescript][ts-url]
 
 
 ## Contact

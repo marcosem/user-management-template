@@ -18,10 +18,21 @@
 
     // Recommended Options
     "strict": true,
-    "isolatedModules": true,
+    //"isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+
+    "baseUrl": "./src",
+    "allowJs": true,
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"]
+    },
   },
-  "exclude": ["eslint.config.mts"]
+  "ts-node": {
+      "require": ["tsconfig-paths/register"]
+  },
+  "exclude": ["eslint.config.mjs", "dist"]
 }

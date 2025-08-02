@@ -1,7 +1,8 @@
 {
   "name": "user-management-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "Marcos Mathias <marcos-github@memathias.com>",
+  "main": "server.ts",
   "license": "MIT",
   "scripts": {
     "start:dev": "nodemon --watch src/ --exec ts-node src/shared/infra/http/server.ts -e ts"

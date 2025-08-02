@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction, Router } from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import 'dotenv/config';
 import { errors } from 'celebrate';
 import AppError from '@shared/errors/AppError';
@@ -7,10 +7,7 @@ import routes from './routes';
 
 const app = express();
 
-const temp = Router();
-
 app.use(routes);
-app.use(temp);
 
 app.use(errors());
 app.use((err: Error, req: Request, res: Response, _: NextFunction) => {

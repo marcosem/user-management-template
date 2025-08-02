@@ -6,7 +6,7 @@
 
 
 ## Contact
-DEV: Marcos Mathias - marcos@memathias.com
+DEV: Marcos Mathias - marcos-github@memathias.com
 
 [node-url]: https://nodejs.org/
 [ts-url]: https://www.typescriptlang.org/

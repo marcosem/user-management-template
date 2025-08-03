@@ -20,22 +20,19 @@ To get a local copy up and running follow these simple example steps.
 [https://github.com/marcosem/user-management-template.git][usermng-repo]
 <br />
 
-2. Create your own .env file based in the '.env.example' file.
+2. Create your own .env file based in the [./env.example][dotenv-file] file.
 The file must contain a MD5 string for APP_SECRET and APP_ADMIN_SECRET.
-[./env.example][dotenv-file]
-<br/>
 <br/>
 
-2. Start a local docker for PostgresSQL
+3. Start a local docker for PostgresSQL
 ```sh
 docker run --name usermng -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=usermng -p 5432:5432 -d postgres
 ```
 * Note: The default db name is "usermng", you can change it, its password, port, and so on, at TypeORM DataSource file:
 [./src/shared/infra/typeorm/index.ts][typeorm-init-file]
 <br/>
-<br/>
 
-3. Run TypeORM migrations, by running the package.json script: 'migration:run'. ie:
+4. Run TypeORM migrations, by running the package.json script: 'migration:run'. ie:
 ```sh
 yarn migration:run
 ```

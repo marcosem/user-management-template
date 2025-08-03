@@ -20,16 +20,18 @@ To get a local copy up and running follow these simple example steps.
 ```sh
 docker run --name usermng -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=usermng -p 5432:5432 -d postgres
 ```
-* Note: The default db name is "usermng", you can change it, its password, port, and so on, at typeORM DataSource file:
+* Note: The default db name is "usermng", you can change it, its password, port, and so on, at TypeORM DataSource file:
 [./src/shared/infra/typeorm/index.ts][typeorm-init-file]
 <br/>
 <br/>
 
-3. Run typeORM migrations, by running the package.json script: 'migration:run'. ie:
+3. Run TypeORM migrations, by running the package.json script: 'migration:run'. ie:
 ```sh
 yarn migration:run
 ```
 
+<br/>
+<br/>
 ## Contact
 DEV: Marcos Mathias - marcos-github@memathias.com
 

@@ -1,25 +1,21 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
     "lib": ["ES2023", "DOM"],
     "module": "nodenext",
     "target": "ES2023",
-    "types": [],
+    "types": ["jest", "node"],
 
-    // Other Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
-    // Recommended Options
     "strict": true,
     "strictPropertyInitialization": false,
-    //"isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
@@ -32,12 +28,13 @@
       "@shared/*": ["shared/*"]
     },
 
-    // For typeorm
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
   "ts-node": {
       "require": ["tsconfig-paths/register"]
   },
-  "exclude": ["eslint.config.mjs", "dist"]
+  "exclude": ["eslint.config.mjs", "dist", "jest.config.ts"]
 }

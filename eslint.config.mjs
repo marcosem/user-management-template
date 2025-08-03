@@ -10,6 +10,10 @@ export default defineConfig([
     plugins: { js, ts: tseslint, prettier: prettierPlugin },
     extends: ['js/recommended', 'ts/recommended'],
     languageOptions: { globals: globals.node },
+    env: {
+      node: true,
+      jest: true,
+    },
 
     rules: {
       'no-undef': 2,

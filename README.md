@@ -31,7 +31,6 @@ yarn migration:run
 ```
 
 <br/>
-<br/>
 
 ## Contact
 DEV: Marcos Mathias - marcos-github@memathias.com

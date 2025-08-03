@@ -1,6 +1,8 @@
-import express, { Request, Response, NextFunction } from 'express';
+import 'reflect-metadata';
 import 'dotenv/config';
+import express, { Request, Response, NextFunction } from 'express';
 import { errors } from 'celebrate';
+import '@shared/infra/typeorm';
 import AppError from '@shared/errors/AppError';
 
 import routes from './routes';

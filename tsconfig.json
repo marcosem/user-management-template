@@ -18,6 +18,7 @@
 
     // Recommended Options
     "strict": true,
+    "strictPropertyInitialization": false,
     //"isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
